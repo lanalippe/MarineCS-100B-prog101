@@ -59,7 +59,7 @@ plot_kefj(hotday_datetime, hotday_temperature, hotday_exposure)
 
 # Repeat for the coldest day
 
-coldest_idx <- which.max(kefj_temperature)
+coldest_idx <- which.min(kefj_temperature)
 coldest_time <- kefj_datetime[coldest_idx]
 coldest_site <- kefj_site[coldest_idx]
 coldday_start <- as.POSIXct("2018-07-03 00:00", tz = "Etc/GMT+8")
